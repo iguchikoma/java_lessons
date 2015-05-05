@@ -38,6 +38,11 @@ public class HelloWorld {
                 System.out.println("default");
                 break;
         }
+        int m = 0;
+        while (m < 10) {
+            System.out.println(m);
+            m++;
+        }
     }
 }
 // testing comment
