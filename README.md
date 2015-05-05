@@ -61,7 +61,12 @@ Total 4 (delta 2), reused 0 (delta 0)
 
 To https://github.com/iguchikoma/java_lessons.git
  * [new branch]      method -> method
+```
+* Github上でpushしたmethod branchをmasterへmergeする旨のpull request
+* Github上でmethod branchのcode reviewを行いmasterへmerge
+* Github上でmethod branchをdelete
 
+```
 iguchitakashi@ta-mac $ git branch -a
   master
 * method
