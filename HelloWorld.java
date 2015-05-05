@@ -14,6 +14,13 @@ public class HelloWorld {
         String a = "hello\nworld\tworld2\\";
         String b = "world";
         System.out.println(a+b);
+
+        int age = 2;
+        if (age > 20) {
+            System.out.println("otona!");
+        } else {
+            System.out.println("kodomo!");
+        }
     }
 }
 // testing comment
