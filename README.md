@@ -11,6 +11,21 @@ This is iguchi's java lessons
 ## how to release
 
 ## git tips
+* git cloneで任意のremote repositoryをlocalにもってくる
+
+```
+iguchitakashi@ta-mac $ git clone https://github.com/iguchikoma/java_lessons.git
+```
+* git cloneを実行したdirectory配下にjava_lessonsというディレクトリができる
+* java_lessonsディレクトリに移動してgit checkout -b [branch-name]でブランチを作って、そのブランチへチェックアウトする
+
+```
+iguchitakashi@ta-mac $ cd java_lessons
+iguchitakashi@ta-mac $ git checkout -b method
+```
+
+* fileを編集
+* 編集後は以下のような流れで、git add, git commit, git push origin [branch-name] を実行して、remote repositoryへ変更をpushする
 
 ```
 iguchitakashi@ta-mac $ git status
