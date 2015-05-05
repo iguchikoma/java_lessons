@@ -3,8 +3,41 @@
  * @author takashi iguchi
  *
  */
+
+class User {
+    protected String name;
+    String email;
+
+    User(String name) {
+        this.name = name;
+    }
+
+    void sayHi(){
+        System.out.println("Hi form class, i am "+ this.name);
+    }
+}
+
+class SuperUser extends User {
+    SuperUser(String name) {
+        super(name);
+    }
+    void sayHi() {
+        System.out.println("Hi!!!! form class, i am "+ this.name);
+    }
+}
+
 public class HelloWorld {
     public static void main (String[] args) {
+        User tom = new User("tom");
+        User bob = new SuperUser("bob");
+        tom.sayHi();
+        bob.sayHi();
+        String s = new String("abcdefg");
+
+        System.out.println(s.length());
+        System.out.println(s.substring(2, 5));
+        System.out.println(s.replaceAll("abc", "ABC"));
+
         System.out.println("Hello World!"); // comment
         // comment
         // variable
