@@ -21,6 +21,9 @@ public class HelloWorld {
         } else {
             System.out.println("kodomo!");
         }
+        String message;
+        message = (age > 10) ? "otona" : "kodomo";
+        System.out.println(message);
     }
 }
 // testing comment
