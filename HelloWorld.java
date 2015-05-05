@@ -8,9 +8,12 @@ public class HelloWorld {
         System.out.println("Hello World!"); // comment
         // comment
         // variable
-        int x;
-        x = 5;
+        int x = 5;
         System.out.println(x);
+        // datatype
+        String a = "hello\nworld\tworld2\\";
+        String b = "world";
+        System.out.println(a+b);
     }
 }
 
