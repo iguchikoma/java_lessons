@@ -5,5 +5,7 @@ This is iguchi's java lessons
 * Takashi Iguchi
 
 ## files
+* HelloWorld.java
+* HelloWorld.class
 
 ## how to release
