@@ -52,9 +52,15 @@ public class HelloWorld {
             }
             System.out.println(l);
         }
-
+        int sales[]; // 宣言
+        sales = new int[4]; //領域の確保
+        sales[0] = 150;
+        sales[1] = 200;
+        sales[2] = 140;
+        sales[3] = 400;
+        // sales.length; //領域の個数
+        for (int o = 0; o < sales.length; o++){
+            System.out.println(sales[o]);
+        }
     }
 }
-// testing comment
-// testing comment
-// testing comment
