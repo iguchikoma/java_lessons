@@ -40,9 +40,19 @@ public class HelloWorld {
         }
         int m = 0;
         while (m < 10) {
-            System.out.println(m);
             m++;
+            if ( m % 2 == 0){
+                continue;
+            }
+            System.out.println(m);
         }
+        for (int l = 0; l < 10; l++) {
+            if (l == 5){
+                break;
+            }
+            System.out.println(l);
+        }
+
     }
 }
 // testing comment
