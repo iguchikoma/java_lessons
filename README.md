@@ -17,7 +17,7 @@ This is iguchi's java lessons
 iguchitakashi@ta-mac $ git clone https://github.com/iguchikoma/java_lessons.git
 ```
 * git cloneを実行したdirectory配下にjava_lessonsというディレクトリができる
-* java_lessonsディレクトリに移動してgit checkout -b [branch-name]でブランチを作って、そのブランチへチェックアウトする
+* java_lessonsディレクトリに移動してgit checkout -b [branch-name]でブランチを作って、そのブランチへチェックアウトする。今回はbranch名はmethod。
 
 ```
 iguchitakashi@ta-mac $ cd java_lessons
@@ -77,9 +77,16 @@ Total 4 (delta 2), reused 0 (delta 0)
 To https://github.com/iguchikoma/java_lessons.git
  * [new branch]      method -> method
 ```
+
 * Github上でpushしたmethod branchをmasterへmergeする旨のpull request
 * Github上でmethod branchのcode reviewを行いmasterへmerge
 * Github上でmethod branchをdelete
+* ここまではGithub上の操作
+
+* 以下参考
+* これを全部local repositoryでやるには, git checkout master のあとにgit merge methodとして、その後git push origin masterとして, 最後にmasterをcheckoutしている状態でgit pullして完了。
+
+* その後、localでgit pull --pruneでサーバ(remote repository上でmergeされた後のmasterをtracking branchに持ってきてlocal branchのmasterへmergeした後にgit branch -d [branch-name]でlocalの不要なbranchを消す
 
 ```
 iguchitakashi@ta-mac $ git branch -a
@@ -135,3 +142,8 @@ iguchitakashi@ta-mac $ git branch -a
   remotes/origin/master
 ```
 
+* 参考URL
+http://d.hatena.ne.jp/hokaccha/20120404/1333507076
+http://qiita.com/Teloo/items/95a860ae276b49edb040
+
+* その他git addとgit commitを同時に行うにはgit commit -am "commitのcomment...."とすればOK
