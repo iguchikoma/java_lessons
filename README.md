@@ -145,5 +145,6 @@ iguchitakashi@ta-mac $ git branch -a
 * 参考URL
 http://d.hatena.ne.jp/hokaccha/20120404/1333507076
 http://qiita.com/Teloo/items/95a860ae276b49edb040
+http://tweeeety.hateblo.jp/entry/2014/11/19/235517
 
 * その他git addとgit commitを同時に行うにはgit commit -am "commitのcomment...."とすればOK
