@@ -62,5 +62,13 @@ public class HelloWorld {
         for (int o = 0; o < sales.length; o++){
             System.out.println(sales[o]);
         }
+        sayHi("aaa");
+        sayHi();
+    }
+    public static void sayHi(String name) {
+        System.out.println("hi" + name);
+    }
+    public static void sayHi() {
+        System.out.println("hi");
     }
 }
